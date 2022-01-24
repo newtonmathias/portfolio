@@ -443,6 +443,20 @@ img {
   display: block;
   background-color: var(--first-color);
 }
+
+.skills__close .skills__list {
+  height: 0;
+  overflow: hidden;
+}
+
+.skills__open .skills__list {
+  max-height: max-content;
+  margin-bottom: var(--mb-2-5);
+}
+
+.skills__open .skills__arrow {
+  transform: rotate(-180deg);
+}
 /*==================== QUALIFICATION ====================*/
 
 /*==================== SERVICES ====================*/
