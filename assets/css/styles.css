@@ -349,20 +349,21 @@ img {
 /*==================== BUTTONS ====================*/
 .button {
   display: inline-block;
-  background-color: var(--first-color);
-  color: #fff;
+  background-color: transparent;
+  color: var(--first-color);
   padding: 1rem;
-  border-radius: 0.5rem;
+  border: 1px solid var(--first-color);
+  border-radius: 0.25rem;
   font-weight: var(--font-medium);
 }
 
 .button:hover {
-  background-color: var(--first-color-alt);
+  background-color: var(--first-color-lighter);
 }
 
 .button__icon {
   font-size: 1.25rem;
-  margin-left: var(--mb-0-5);
+  margin-left: var(--mb-1);
   transition: 0.3s;
 }
 
@@ -394,6 +395,9 @@ img {
 .button--link:hover {
   background-color: transparent;
   color: var(--first-color-alt);
+}
+.services__button {
+  border: none;
 }
 
 /*==================== ABOUT ====================*/
@@ -744,35 +748,6 @@ img {
 .swiper-pagination-bullet {
   outline: none;
 }
-/*==================== PROJECT IN MIND ====================*/
-.project {
-  text-align: center;
-}
-
-.project__bg {
-  background-color: var(--first-color-second);
-  padding-top: 3rem;
-}
-
-.project__title {
-  font-size: var(--h2-font-size);
-  /* margin-bottom: var(--mb-0-75); */
-}
-
-.project__description {
-  margin-bottom: var(--mb-1-5);
-}
-
-.project__title,
-.project__description {
-  color: #fff;
-}
-
-.project__img {
-  width: 232px;
-  justify-self: center;
-}
-/*==================== TESTIMONIAL ====================*/
 
 /*==================== CONTACT ME ====================*/
 .contact__container {
@@ -793,26 +768,15 @@ img {
   color: var(--text-color-light);
 }
 
-.contact__content {
-  background-color: var(--input-color);
-  border-radius: 0.5rem;
+.contact__container {
   padding: 0.75rem 1rem 0.25rem;
+  align-items: center;
+  justify-content: center;
 }
 
-.contact__label {
-  font-size: var(--smaller-font-size);
-  color: var(--title-color);
-}
-
-.contact__input {
-  width: 100%;
-  background-color: var(--input-color);
-  color: var(--text-color);
-  font-family: var(--body-font);
-  font-size: var(--normal-font-size);
-  border: none;
-  outline: none;
-  padding: 0.25rem 0.5rem 0.5rem 0;
+.contact__description {
+  text-align: center;
+  margin-bottom: var(--mb-2-5);
 }
 /*==================== FOOTER ====================*/
 .footer {
