@@ -767,7 +767,7 @@ img {
   padding: 0 0.3rem;
   border-radius: 0.4rem;
   z-index: var(--z-tooltip);
-  transition: 4s;
+  transition: 1s;
 }
 
 .scrollup:hover {
@@ -1021,15 +1021,12 @@ img {
   .footer__container {
     padding: 0;
   }
+
   .container {
-    max-width: 90%;
+    max-width: 92%;
   }
   .home__blob {
     width: 320px;
-  }
-
-  .home__social {
-    transform: translateX(-6rem);
   }
 
   .services__container {
